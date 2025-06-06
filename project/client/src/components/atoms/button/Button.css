@@ -1,0 +1,48 @@
+@import '../../../__variables.css';
+
+.btn {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--button-text-color);
+  border: none;
+  width: 150px;
+  margin-left: auto;
+  border-radius: 10px;
+  padding: 0.75em 1.75em;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  user-select: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px var(--box-shadow-btn-color);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 8px 24px var(--hover-box-shadow-btn-color);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px var(--active-box-shadow-btn-color);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-btn-box-shadow-color);
+}
+
+
+.btn--secondary {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+.btn--secondary:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 6px 18px var(--hover-box-shadow-btn-color);
+}

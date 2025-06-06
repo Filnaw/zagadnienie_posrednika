@@ -1,0 +1,50 @@
+@import '../../../__variables.css';
+
+.input {
+  background: var(--input-background);
+  border: 1px solid var(--glass-btn-border-color);
+  border-radius: 8px;
+  border-color: #009cb8;
+  color: var(--button-text-color);
+  font-size: 1rem;
+  padding: 0.75em 1em;
+  outline: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+  box-shadow: 0 2px 6px var(--box-shadow-btn-color);
+}
+
+.input:hover {
+  background: var(--hover-glass-btn-background-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 8px var(--hover-box-shadow-btn-color);
+}
+
+.input:focus {
+ box-shadow: 0 0 0 3px var(--box-shadow-input-color);
+border-color: var(--primary-color);
+  transform: scale(1.01);
+}
+
+.input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  color: var(--label-color);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}

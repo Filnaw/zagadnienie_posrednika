@@ -1,0 +1,4 @@
+body {
+background: linear-gradient(135deg, #ffffff, #f2fcff);
+color: var(--button-text-color);
+}

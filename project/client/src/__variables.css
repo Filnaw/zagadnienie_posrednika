@@ -1,0 +1,35 @@
+
+ :root {
+
+  --primary-color: #8645e8;
+  --secondary-color: #33f3f3;
+
+  --button-text-color: #ffffff;
+
+
+  --form-background-color: #f6f6f6;
+  --container-background-color: #f5faff;
+  --navbar-background-color: #f0f0f5;
+
+
+  --input-background: #ffffff;
+  --input-hover-color: #e8fafe;
+  --input-focus-background-color: #ffffff;
+  --input-focus-color: var(--primary-color);
+  --input-placeholder-color: #888888;
+  --border-input-color: #cccccc;
+  --box-shadow-input-color: rgba(0, 255, 255, 0.4);
+
+
+  --label-color: #222222;
+
+
+  --box-shadow-btn-color: rgba(0, 255, 255, 0.1);
+  --hover-box-shadow-btn-color: rgba(0, 255, 255, 0.3);
+  --active-box-shadow-btn-color: rgba(0, 255, 255, 0.2);
+  --focus-btn-box-shadow-color: rgba(0, 255, 255, 0.4);
+
+
+  --glass-btn-border-color: rgba(0, 255, 255, 0.2);
+  --hover-glass-btn-background-color: rgba(0, 0, 0, 0.04);
+}
