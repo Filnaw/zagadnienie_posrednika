@@ -11,8 +11,9 @@ const Input =({label, id, type, placeholder})=>{
                 id={id}
                 className="input"
                 type={type}
-                placeholder={placeholder}
+                defaultValue={placeholder}
             />
+
         </div>
     );
 

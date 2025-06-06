@@ -2,11 +2,11 @@ import React from "react";
 import "./Button.css";
 
 
-const Button =({text})=>{
+const Button =({text, onClick})=>{
 
     return(
         <>
-            <div className="btn">{text}</div>
+            <div onClick={onClick} className="btn">{text}</div>
         </>
     );
 
