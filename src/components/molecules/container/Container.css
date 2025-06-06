@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap:0.2rem;
+  background-color: var(--form-background-color);
+  width:80%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 0.5rem;
+
+}
+
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}

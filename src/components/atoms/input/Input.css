@@ -1,31 +1,30 @@
 @import '../../../__variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 
 .input {
-  background: var(--input-background);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-btn-border-color);
-  border-radius: 8px;
-  border-color: #009cb8;
-  color: var(--button-text-color);
-  font-size: 1rem;
+  border-radius: 10px;
+  color: var(--input-font-color);
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
   padding: 0.75em 1em;
-  outline: none;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+  transition: all 0.2s ease;
   box-shadow: 0 2px 6px var(--box-shadow-btn-color);
+  backdrop-filter: blur(6px);
 }
 
 .input:hover {
-  background: var(--hover-glass-btn-background-color);
+  background: rgba(255, 255, 255, 0.04);
   border-color: var(--primary-color);
-  box-shadow: 0 4px 8px var(--hover-box-shadow-btn-color);
+  box-shadow: 0 4px 10px var(--hover-box-shadow-btn-color);
 }
 
 .input:focus {
- box-shadow: 0 0 0 3px var(--box-shadow-input-color);
-border-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--box-shadow-input-color);
   transform: scale(1.01);
 }
 
@@ -36,15 +35,15 @@ border-color: var(--primary-color);
 .input-row {
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
+  gap: 0.4em;
 }
 
 .label {
-  display: inline-block;
-  margin-bottom: 0.25em;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--label-color);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  margin-bottom: 0.25em;
+  opacity: 0.85;
 }

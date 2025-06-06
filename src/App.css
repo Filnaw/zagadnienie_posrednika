@@ -1,4 +1,33 @@
 body {
-background: linear-gradient(135deg, #ffffff, #f2fcff);
-color: var(--button-text-color);
+  background: linear-gradient(
+    135deg,
+    #0a0a0f 0%,
+    #1a1a2e 20%,
+    #281c3a 40%,
+    #401f4c 60%,
+    #00272d 80%,
+    #000000 100%
+  );
+  background-attachment: fixed;
+  background-size: 300% 300%;
+  animation: neonGradient 30s ease infinite;
+
+  color: var(--input-font-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+
+@keyframes neonGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
