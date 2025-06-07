@@ -5,25 +5,25 @@ export const handleSolve = async (setResult) => {
     };
 
     const demand = [
-        getValue("demand-customer-1"),
-        getValue("demand-customer-2"),
-        getValue("demand-customer-3"),
+        getValue("demand-1"),
+        getValue("demand-2"),
+        getValue("demand-3"),
     ];
 
     const sale_price = [
-        getValue("sell-customer-1"),
-        getValue("sell-customer-2"),
-        getValue("sell-customer-3"),
+        getValue("sale-price-1"),
+        getValue("sale-price-2"),
+        getValue("sale-price-3"),
     ];
 
     const supply = [
-        getValue("supply-supplier-1"),
-        getValue("supply-supplier-2"),
+        getValue("supply-1"),
+        getValue("supply-2"),
     ];
 
     const purchase_cost = [
-        getValue("price-supplier-1"),
-        getValue("price-supplier-2"),
+        getValue("purchase-cost-1"),
+        getValue("purchase-cost-2"),
     ];
 
     const transport_cost = [
@@ -39,7 +39,7 @@ export const handleSolve = async (setResult) => {
     const hasInvalid = allValues.some(v => isNaN(v) || v === null);
 
     if (hasInvalid) {
-        alert("❌ Brak danych! Uzupełnij wszystkie pola.");
+        alert("Brak danych! Uzupełnij wszystkie pola.");
         return;
     }
 
@@ -50,7 +50,6 @@ export const handleSolve = async (setResult) => {
         sale_price,
         transport_cost,
     };
-
 
     try {
         const res = await fetch("http://127.0.0.1:5000/solve", {
